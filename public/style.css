@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    
+}
+
+body{
+    background: #27ae60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    text-align: center;
+    margin-top: 6vh;
+    color: #fff;
+    font-size: 3em;
+}
+
+.container{
+    max-width: 500px;
+    width: 90vw;
+    background: #fff;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    margin: 10px;
+    margin-top: 6vh;
+    border-radius: 10px;
+    height: 80%;
+    padding-top: 10px;
+}
+
+#status{
+    text-align: center;
+    font-size: 1.5em;
+    background: #3498db;
+    color: #fff;
+    padding: 5px;
+    width: 85%;
+    margin: 2px auto;
+    transform-origin: bottom center;
+    border-radius: 2px;
+    display: none;
+    transform: scale(0);
+    animation: popStatus .3s ease-out forwards;
+}
+
+@keyframes popStatus{
+    80%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+form>*{
+    margin: 5px;
+}
+
+.container>*{
+    margin: 10px;
+}
+
+input{
+    width: 90%;
+    height: 30px;
+    font-size: 1.3em;
+    padding-left: 5px;
+    border: 1px solid #757575;
+}
+
+input:focus{
+    outline: none;
+}
+
+textarea{
+    width: 90%;
+    font-size: 1.3em;
+    padding: 5px;
+    resize: none;
+    height: 150px;
+    border: 1px solid #757575;
+
+}
+
+textarea:focus{
+    outline: none;
+}
+
+button{
+    height: 40px;
+    padding: 2px 30px;
+    font-size: 1.5em;
+    border: 2px solid #2ecc71;
+    background: #fff;
+    color: #2ecc71;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: all 200ms;
+}
+
+button:focus{
+    outline: none;
+}
+
+button:hover{
+    background: #2ecc71;
+    color: #fff;
+}

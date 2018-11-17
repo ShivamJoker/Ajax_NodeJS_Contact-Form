@@ -85,6 +85,7 @@ input:focus{
 textarea{
     width: 90%;
     font-size: 1.3em;
+    font-face: inherit;
     padding: 5px;
     resize: none;
     height: 150px;
